@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "dgSpecHash": "uOXqntZL1Pd+5tXHVROzMF10H9Ru8tyRe8gBkyz/leWMPzgf5XGOifunWKLPSAyOuvzbHMjjpCGHwO1uepS4qA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Pixel\\OneDrive\\Dokumente\\.projects\\Zeep stuff\\AutoLobby\\AutoLobby.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Pixel\\.nuget\\packages\\bepinex.analyzers\\1.0.8\\bepinex.analyzers.1.0.8.nupkg.sha512",
+    "C:\\Users\\Pixel\\.nuget\\packages\\bepinex.baselib\\5.4.19\\bepinex.baselib.5.4.19.nupkg.sha512",
+    "C:\\Users\\Pixel\\.nuget\\packages\\bepinex.core\\5.4.19\\bepinex.core.5.4.19.nupkg.sha512",
+    "C:\\Users\\Pixel\\.nuget\\packages\\bepinex.plugininfoprops\\1.1.0\\bepinex.plugininfoprops.1.1.0.nupkg.sha512",
+    "C:\\Users\\Pixel\\.nuget\\packages\\harmonyx\\2.7.0\\harmonyx.2.7.0.nupkg.sha512",
+    "C:\\Users\\Pixel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.2\\microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "C:\\Users\\Pixel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net48\\1.0.2\\microsoft.netframework.referenceassemblies.net48.1.0.2.nupkg.sha512",
+    "C:\\Users\\Pixel\\.nuget\\packages\\mono.cecil\\0.11.4\\mono.cecil.0.11.4.nupkg.sha512",
+    "C:\\Users\\Pixel\\.nuget\\packages\\monomod.runtimedetour\\21.12.13.1\\monomod.runtimedetour.21.12.13.1.nupkg.sha512",
+    "C:\\Users\\Pixel\\.nuget\\packages\\monomod.utils\\21.12.13.1\\monomod.utils.21.12.13.1.nupkg.sha512",
+    "C:\\Users\\Pixel\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\Pixel\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\Pixel\\.nuget\\packages\\system.net.http\\4.3.4\\system.net.http.4.3.4.nupkg.sha512",
+    "C:\\Users\\Pixel\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\Pixel\\.nuget\\packages\\system.security.cryptography.algorithms\\4.3.0\\system.security.cryptography.algorithms.4.3.0.nupkg.sha512",
+    "C:\\Users\\Pixel\\.nuget\\packages\\system.security.cryptography.encoding\\4.3.0\\system.security.cryptography.encoding.4.3.0.nupkg.sha512",
+    "C:\\Users\\Pixel\\.nuget\\packages\\system.security.cryptography.primitives\\4.3.0\\system.security.cryptography.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\Pixel\\.nuget\\packages\\system.security.cryptography.x509certificates\\4.3.0\\system.security.cryptography.x509certificates.4.3.0.nupkg.sha512",
+    "C:\\Users\\Pixel\\.nuget\\packages\\unityengine.modules\\2021.3.10\\unityengine.modules.2021.3.10.nupkg.sha512",
+    "C:\\Users\\Pixel\\.nuget\\packages\\zeepkist.gamelibs\\1.0.0-alpha.15.0.297\\zeepkist.gamelibs.1.0.0-alpha.15.0.297.nupkg.sha512"
+  ],
+  "logs": []
+}
