@@ -24,9 +24,9 @@ public class Lobby : MonoBehaviour
             lobbyInstance = UnityEngine.Object.FindObjectOfType<LobbyManager>();
 
             if (lobbyInstance != null) {
-                aLPlugin.Log.LogInfo("Got LobbyManager"); 
+                ALPlugin.Log.LogInfo("Got LobbyManager"); 
             } else {
-                aLPlugin.Log.LogInfo("Couldnt grab LobbyManager");
+                ALPlugin.Log.LogInfo("Couldnt grab LobbyManager");
             }
         }
     }
@@ -34,12 +34,12 @@ public class Lobby : MonoBehaviour
     {  
         autoPlaylister.Gotpm = false;
         autoPlaylister.pm = null;
-        aLPlugin.firstLoad = true;
-        if(!aLPlugin.Active.Value){return;}
+        ALPlugin.firstLoad = true;
+        if(!ALPlugin.Active.Value){return;}
         try{
-            lobbyInstance.MaxPlayers = 50; lobbyInstance.isRoomVisible = aLPlugin.Public.Value; lobbyInstance.createRoom_roomInputName.text = aLPlugin.Lobbyname.Value; lobbyInstance.CreateRoom();
+            lobbyInstance.MaxPlayers = 50; lobbyInstance.isRoomVisible = ALPlugin.Public.Value; lobbyInstance.createRoom_roomInputName.text = ALPlugin.Lobbyname.Value; lobbyInstance.CreateRoom();
         }catch(Exception y){
-            aLPlugin.Log.LogError("Couldnt create Lobby\n" + y);
+            ALPlugin.Log.LogError("Couldnt create Lobby\n" + y);
         } 
     }
 }

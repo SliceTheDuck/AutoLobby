@@ -13,7 +13,7 @@ using System.Collections;
 namespace AutoLobby
 {
     [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
-    public class aLPlugin : BaseUnityPlugin
+    public class ALPlugin : BaseUnityPlugin
     {
         public static ConfigEntry<string> Lobbyname;
         public static ConfigEntry<string> Levels;

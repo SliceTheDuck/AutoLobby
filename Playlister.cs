@@ -15,21 +15,21 @@ public class autoPlaylister : MonoBehaviour
     private static Transform PlaylistEditor;
     public static async void PushLevels()
     {
-        if(!aLPlugin.Active.Value){return;}
+        if(!ALPlugin.Active.Value){return;}
         while(!Gotpm){
             try{
                 GameObject gameplayCanvas = GameObject.Find("Gameplay Canvas");
                 Transform OnlineUI = gameplayCanvas.transform.GetChild(1);
                 PlaylistEditor = OnlineUI.transform.GetChild(4);
                 pm = PlaylistEditor.GetComponent<PlaylistMenu>();
-                aLPlugin.Log.LogInfo("Got pm");
+                ALPlugin.Log.LogInfo("Got pm");
                 Gotpm = true;
             }catch(Exception){}
         }
-        foreach(int i in aLPlugin.levelIds)
+        foreach(int i in ALPlugin.levelIds)
         {
             string returnValue = await GetGTRData(i);
-            aLPlugin.Log.LogInfo(returnValue);
+            ALPlugin.Log.LogInfo(returnValue);
             var data = JsonConvert.DeserializeObject<LevelJson>(returnValue);
             AddToPlaylist(pm, data.author.ToString(), data.name.ToString(), data.uniqueId.ToString(), (ulong)data.workshopId);
         }
@@ -37,7 +37,6 @@ public class autoPlaylister : MonoBehaviour
 
     public static void AddToPlaylist(PlaylistMenu pm, string author, string name, string uid, ulong workshopID)
     {
-        aLPlugin.Log.LogInfo("Started Adding Level");
         pm.thePlaylist = ZeepkistNetwork.CurrentLobby.Playlist;
         pm.random = ZeepkistNetwork.CurrentLobby.PlaylistRandom;
         pm.roundLength = ZeepkistNetwork.CurrentLobby.PlaylistTime;
