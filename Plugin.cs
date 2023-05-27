@@ -17,6 +17,7 @@ namespace AutoLobby
     {
         public static ConfigEntry<string> Lobbyname;
         public static ConfigEntry<string> Levels;
+        public static ConfigEntry<int> MaxPlayers;
         public static ConfigEntry<bool> Active;
         public static ConfigEntry<bool> Public;
 
@@ -34,10 +35,11 @@ namespace AutoLobby
 
         private void Awake()
         {
+            MaxPlayers = Config.Bind("General", "MaxPlayers", 50, new ConfigDescription("Max amount of players in lobby"));
             Lobbyname = Config.Bind("General", "Lobbyname", "Lobby", new ConfigDescription("Name to create lobby with"));
             Active = Config.Bind("General", "Active", false, new ConfigDescription("Should lobby be auto created?"));
             Public = Config.Bind("General", "Public", false, new ConfigDescription("Should lobby be public?"));
-            Levels = Config.Bind("General", "Levelid", "5550", new ConfigDescription("gtr levelid's of levels to auto add on start, separated by \",\" (Doesnt work yet ^^)"));
+            Levels = Config.Bind("General", "Levelid", "5550", new ConfigDescription("gtr levelid's of levels to auto add on start, separated by \",\""));
 
             Levels.SettingChanged += (sender, args) => LevelsChange();
 

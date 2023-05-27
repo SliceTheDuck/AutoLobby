@@ -21,7 +21,9 @@ namespace lobby.Patches
         [HarmonyPostfix]
         public static void Patch()
         {
-            autoPlaylister.PushLevels();
+            if(ALPlugin.firstLoad){
+                autoPlaylister.PushLevels(); ALPlugin.firstLoad = false;
+            }
         }
     }
 }
